@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aadishya provides MEPF design consultancy and engineering solutions across power, healthcare, residential, and commercial projects."
+    />
+    <meta name="keywords" content="MEPF services, engineering consultancy, sustainable solutions, AEC industry, MEP design">
+    <title>Aadishya | MEPF Engineering Consultancy & Services</title>
+    <meta property="og:title" content="Aadishya Engineering - MEPF Design & Consultancy">
+    <meta property="og:description" content="Delivering sustainable and innovative MEPF solutions across power, healthcare, residential, and commercial projects.">
+    <meta property="og:image" content="https://yourwebsite.com/images/Aadishya.png">
+    <meta property="og:url" content="https://yourwebsite.com/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Aadishya Engineering">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Aadishya Engineering - MEPF Design & Consultancy">
+    <meta name="twitter:description" content="Delivering sustainable and innovative MEPF solutions across power, healthcare, residential, and commercial projects.">
+    <meta name="twitter:image" content="https://yourwebsite.com/images/Aadishya.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+      /* Custom styles for video and layout */
+      .video-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+      
+      .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(18, 53, 109, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .video-content {
+        text-align: center;
+        color: white;
+        max-width: 800px;
+        padding: 0 20px;
+      }
+      @media (max-width: 768px) {
+            .video-container {
+		height: auto;
+                height: 100vh; /* Reduced height for mobile */
+
+            }
+              .video-overlay {
+    padding: 2rem 1rem; /* add breathing space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+  }
+ .video-content {
+                padding: 1rem;
+            }
+            .video-content h1 {
+                font-size: 1.75rem !important;
+                line-height: 1.2;
+                margin-bottom: 1rem !important;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+            
+            .video-content h1 span {
+             margin-top: 0.25rem !important;
+                display: block;
+            }
+            
+            .video-content p {
+                 font-size: 0.95rem !important;
+                margin-bottom: 0.5rem;
+                line-height: 1.5;
+            }
+            
+            .stats-container {
+                gap: 0.5rem !important; /* Tighter gap between stats */
+                margin-bottom: 1.5rem;
+            }
+            
+            .stat-card {
+                width: 100px !important; /* Smaller stat cards */
+  		height: 100px !important;
+                padding: 0.75rem 0.5rem !important;
+            }
+            
+            .stat-card p:first-child {
+                font-size: 1.25rem !important; /* Smaller stat numbers */
+            }
+            
+            .stat-card p:last-child {
+                font-size: 0.7rem !important; /* Smaller stat labels */
+                line-height: 1.2;
+            }
+            
+            .button-container {
+                flex-direction: column;
+                gap: 0.75rem !important;
+            }
+            
+            .button-container a {
+                padding: 0.75rem 1.5rem !important;
+                font-size: 0.9rem;
+            }
+        }
+        
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            .video-container {
+                height: 90vh;
+            }
+            
+            .video-content h1 {
+                font-size: 1rem !important;
+            }
+            
+            .stat-card {
+                width: 65px !important; /* Slightly smaller for very small screens */
+                height: 65px !important;
+                padding: 0.4rem !important;
+            }
+.stat-card p {
+  margin: 0 !important;
+}
+	  .stat-card p:first-child {
+                font-size: .9rem !important;
+            }
+	  .stat-card p:last-child {
+                font-size: 0.6rem !important;
+            }
+		
+		.button-container {
+                flex-direction: column;
+                gap: 0.55rem !important;
+            }
+            
+            .button-container a {
+                padding: 0.5rem .5rem !important;
+                font-size: 0.8rem;
+            }
+
+        }
+
+            /* Footer styles 
+      footer {
+        background-color: #12356d;
+        color: white;
+        padding: 40px 0 20px;
+      }
+      
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        padding: 0 20px;
+      }
+      
+      .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        border-bottom: 2px solid rgba(255,255,255,0.1);
+        padding-bottom: 10px;
+      }
+      
+      .footer-section p, .footer-section a {
+        margin-bottom: 10px;
+        display: block;
+        color: rgba(255,255,255,0.8);
+        text-decoration: none;
+      }
+      
+      .footer-section a:hover {
+        color: white;
+      }
+      
+      .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+      }
+      
+      .social-links a {
+        font-size: 1.5rem;
+      }
+      
+      .footer-bottom {
+        max-width: 1200px;
+        margin: 30px auto 0;
+        padding: 20px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        text-align: center;
+        color: rgba(255,255,255,0.7);
+      }
+      
+      .footer-bottom a {
+        color: rgba(255,255,255,0.8);
+        text-decoration: none;
+      }
+      
+      .footer-bottom a:hover {
+        color: white;
+      }*/
+
+      
+         </style>
+  </head>
+
+  <body class="text-gray-800 font-sans">
+    <!-- ✅ Floating WhatsApp -->
+    <a
+      href="https://wa.me/+919904269699?text=Hi,I want to book a consultation with you."
+      target="_blank"
+      class="whatsapp-float"
+      aria-label="WhatsApp"
+      >💬</a>
+
+    <!-- ✅ Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+      <nav class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2">
+          <img src="images/Aadishya.png" alt="Aadishya Logo" class="h-10 object-contain" />
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul id="menu" class="hidden md:flex space-x-6 font-semibold text-gray-800">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html" class="hover:text-dark-blue">About</a></li>
+          <li><a href="services.html" class="hover:text-dark-blue">Services</a></li>
+          <li><a href="projects.html" class="hover:text-dark-blue">Projects</a></li>
+          <li><a href="clients.html" class="hover:text-dark-blue">Clients</a></li>
+          <li><a href="contact.html" class="hover:text-dark-blue">Contact</a></li>
+          <li>
+            <a
+              href="tel:+919904269699"
+              class="border border-[#12356d] text-[#12356d] hover:bg-[#12356d] hover:text-white h-11 rounded-md px-3 py-2 transition-all duration-300 text-center"
+            >
+              📞 +91 9904269699
+            </a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="text-2xl md:hidden focus:outline-none">
+          ☰
+        </button>
+      </nav>
+
+      <!-- Mobile Dropdown Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden bg-white shadow-lg border-t border-gray-200 md:hidden"
+      >
+        <ul class="flex flex-col space-y-4 p-5 font-semibold text-gray-800">
+          <li><a href="index.html" class="hover:text-dark-blue">Home</a></li>
+          <li><a href="about.html" class="hover:text-dark-blue">About</a></li>
+          <li><a href="services.html" class="hover:text-dark-blue">Services</a></li>
+          <li><a href="projects.html" class="hover:text-dark-blue">Projects</a></li>
+          <li><a href="clients.html" class="hover:text-dark-blue">Clients</a></li>
+          <li><a href="contact.html" class="hover:text-dark-blue">Contact</a></li>
+          <li>
+            <a
+              href="tel:+919904269699"
+              class="border border-[#12356d] text-[#12356d] hover:bg-[#12356d] hover:text-white h-11 rounded-md px-3 py-2 transition-all duration-300 text-center"
+            >
+              📞 +91 9904269699
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+         <section class="video-container pt-20 bg-gray-900">
+            <video autoplay muted loop playsinline>
+                <!-- Add your video file here -->
+                <source src="videos/hero-video.mp4" type="video/mp4">
+                               <!-- Fallback image if video doesn't load -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay">
+                <div class="video-content">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                        Engineering Excellence,
+                        <span class="block text-white mt-2">Innovative Solutions</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                        Aadishya is a precision-driven MEPF design consultancy that offers smart solutions for sustainable high-performance spaces engineered from concept to commissioning for every industry
+                    </p>
+
+                    <!-- ✅ Stats Cards Inside Video Overlay -->
+                    <div class="stats-container flex flex-wrap gap-4 justify-center mb-8">
+                        <div class="stat-card bg-white px-6 py-4 rounded-xl shadow-lg text-center w-40 border border-gray-200">
+                            <p class="text-2xl font-bold text-[#12356d]">11+</p>
+                            <p class="text-sm font-medium text-[#12356d]">Years of Experience</p>
+                        </div>
+                        <div class="stat-card bg-white px-6 py-4 rounded-xl shadow-lg text-center w-40 border border-gray-200">
+                            <p class="text-2xl font-bold text-[#12356d]">50+</p>
+                            <p class="text-sm font-medium text-[#12356d]">Projects</p>
+                        </div>
+                        <div class="stat-card bg-white px-6 py-4 rounded-xl shadow-lg text-center w-40 border border-gray-200">
+                            <p class="text-2xl font-bold text-[#12356d]">99%</p>
+                            <p class="text-sm font-medium text-[#12356d]">Client Satisfaction</p>
+                        </div>
+                    </div>
+
+                    <div class="button-container flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="projects.html" class="bg-white text-[#12356d] hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-all duration-300">
+                            Explore Our Projects
+                        </a>
+                        <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-[#12356d] font-semibold py-3 px-8 rounded-lg transition-all duration-300">
+                            Get Free Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+      <!-- ✅ About Section -->
+      <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+          <div class="flex justify-start">
+            <img
+              src="images/about.jpeg"
+              alt="About Aadishya"
+              class="rounded-2xl shadow-lg w-full max-w-md"
+            />
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-[#12356d] mb-4 flex items-top gap-2">
+              About
+              <img src="images/adishyalogo.png" alt="Aadishya Logo" class="h-10 inline-block">
+            </h2>
+            <p class="text-lg text-gray-900 leading-relaxed font-medium mb-4">
+              <img src="images/adishyalogo.png" alt="Aadishya Logo" class="inline-block h-6 align-text-bottom mr-1" />
+              is a leading MEPF Services design consultancy company that provides comprehensive and innovative design approaches for engineering services across various sectors.
+            </p>
+            <p class="text-lg text-gray-900 leading-relaxed font-medium mb-6">
+              We specialize in Power, Data centres, IT labs, Infrastructure, Healthcare, Pharmaceutical, Retail, and Hospitality sectors, delivering sustainable and cutting-edge solutions.
+            </p>
+            <a
+              href="about.html"
+              class="bg-[#12356d] hover:bg-[#0f2952] text-white px-6 py-3 rounded-lg font-semibold"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ✅ Features -->
+      <section class="py-20 bg-gray-50">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-[#12356d] ">Why Choose Us</h2>
+          <p class="text-lg text-gray-900 leading-relaxed font-small mb-4">
+            Industry-leading expertise and commitment to excellence
+          </p>
+        </div>
+        <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition border border-[#12356D]">
+            <div class="text-4xl mb-3">⚡</div>
+            <h3 class="font-semibold text-xl mb-2">Expert Team</h3>
+            <p>Highly qualified engineers with decades of combined experience in MEP systems design and implementation.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition border border-[#12356D]">
+            <div class="text-4xl mb-3">🎯</div>
+            <h3 class="font-semibold text-xl mb-2">Quality Assurance</h3>
+            <p>Rigorous quality control ensuring compliance with international standards.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition border border-[#12356D]">
+            <div class="text-4xl mb-3">🚀</div>
+            <h3 class="font-semibold text-xl mb-2">Innovation</h3>
+            <p>Cutting-edge technology and creative design for performance and efficiency.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition border border-[#12356D]">
+            <div class="text-4xl mb-3">🌱</div>
+            <h3 class="font-semibold text-xl mb-2">Sustainability</h3>
+            <p>Eco-friendly engineering focused on energy efficiency and responsible design.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition border border-[#12356D]">
+            <div class="text-4xl mb-3">💼</div>
+            <h3 class="font-semibold text-xl mb-2">Comprehensive Services</h3>
+            <p>From concept to commissioning, complete MEPF solutions under one roof.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition border border-[#12356D]">
+            <div class="text-4xl mb-3">⏱️</div>
+            <h3 class="font-semibold text-xl mb-2">On-Time Delivery</h3>
+            <p>We meet deadlines without compromising on quality or safety.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ✅ Services Preview 
+      <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-900">Our Services</h2>
+            <p class="text-gray-600 mt-2">
+              Comprehensive MEPF engineering solutions for all your needs
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition">
+              <div class="text-4xl mb-4">🔌</div>
+              <h3 class="font-semibold text-lg mb-2">Electrical Systems</h3>
+              <p class="text-gray-600">Complete electrical design and implementation</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition">
+              <div class="text-4xl mb-4">❄️</div>
+              <h3 class="font-semibold text-lg mb-2">HVAC Systems</h3>
+              <p class="text-gray-600">Heating, ventilation and air conditioning solutions</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition">
+              <div class="text-4xl mb-4">🔥</div>
+              <h3 class="font-semibold text-lg mb-2">Fire Protection</h3>
+              <p class="text-gray-600">Advanced fire safety and protection systems</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition">
+              <div class="text-4xl mb-4">💧</div>
+              <h3 class="font-semibold text-lg mb-2">Plumbing Systems</h3>
+              <p class="text-gray-600">Efficient water supply and drainage solutions</p>
+            </div>
+          </div>
+          <div class="text-center mt-10">
+            <a href="services.html" class="bg-[#12356d] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              View All Services
+            </a>
+          </div>
+        </div>
+      </section>-->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Aadishya Engineering</h3>
+          <p>Excellence in MEPF engineering solutions. Building tomorrow's infrastructure today with innovative and sustainable designs.</p>
+          <div class="social-links">
+          <!--   <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="LinkedIn">💼</a> -->
+          <a href="https://www.instagram.com/aadishya.in/" aria-label="Instagram" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2ZM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 1.5a3.5 3.5 0 1 1 0 7a3.5 3.5 0 0 1 0-7Zm5.25-.88a.88.88 0 1 0 0-1.75a.88.88 0 0 0 0 1.75Z"/>
+  </svg>
+</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <!-- <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>-->
+
+          <a href="contact.html">Contact</a>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Our Services</h3>
+          <p>Electrical Engineering</p>
+          <p>HVAC Systems</p>
+          <p>Fire Protection</p>
+          <p>Plumbing Systems</p>
+          <p>BIM & Revit</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p>📍 Ahmedabad</p>
+          <p style="display: inline-flex; align-items: top; gap: 5px;">
+            📧 <a href="mailto:jainesh@gmail.com">jainesh@gmail.com</a>
+          </p>
+          <p>📞 +91 9904269699</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Aadishya Engineering. All rights reserved. </p>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
