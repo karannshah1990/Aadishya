@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aadishya - MEPF Services design consultancy company providing comprehensive and innovative engineering solutions across multiple sectors.">
+    <meta name="keywords" content="MEPF services, engineering consultancy, sustainable solutions, AEC industry, MEP design">
+    <meta name="author" content="Aadishya Engineering">
+    <title>About Us | Aadishya Engineering</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the rotating clients section */
+        .clients-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding: 40px 0;
+        }
+        
+        .clients-track {
+            display: flex;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+        
+        .client-card {
+            flex: 0 0 auto;
+            width: 250px;
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #12356d;
+            transition: transform 0.3s ease;
+        }
+        
+        .client-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .client-initial {
+            background-color: #12356d;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .client-logo {
+            flex: 0 0 auto;
+            width: 210px;
+            height: 130px;
+            margin: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #12356d;
+            transition: all 0.3s ease;
+        }
+        
+        .client-logo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+            border-color: #12356d;
+        }
+        
+        .client-logo img {
+            max-width: 100%;
+            max-height: 125px;
+            
+            opacity: 0.9;
+            transition: all 0.3s ease;
+        }
+        
+        .client-logo:hover img {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        .client-info h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+            color: #1f2937;
+        }
+        
+        .client-info p {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin: 0;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Pause animation on hover */
+        .clients-track:hover {
+            animation-play-state: paused;
+        }
+        
+        /* Gradient overlays for a smooth edge effect */
+        .clients-container::before,
+        .clients-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            z-index: 2;
+        }
+        
+        .clients-container::before {
+            left: 0;
+            background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        }
+        
+        .clients-container::after {
+            right: 0;
+            background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        }
+    </style>
+</head>
+<body class="text-gray-800 font-sans">
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/+919904269699?text=Hi,I want to book a consultation with you." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        💬
+    </a>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+        <nav class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/Aadishya.png" alt="Aadishya Logo" class="h-10 object-contain" />
+            </a>
+
+            <ul id="menu" class="hidden md:flex space-x-6 font-semibold text-gray-800">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html" class="hover:text-dark-blue">About</a></li>
+                <li><a href="services.html" class="hover:text-dark-blue">Services</a></li>
+                <li><a href="projects.html" class="hover:text-dark-blue">Projects</a></li>
+                <li><a href="clients.html" class="hover:text-dark-blue">Clients</a></li>
+                <li><a href="contact.html" class="hover:text-dark-blue">Contact</a></li>
+                <li>
+                    <a
+                        href="tel:+919904269699"
+                        class="border border-[#12356d] text-[#12356d] hover:bg-[#12356d] hover:text-white h-11 rounded-md px-3 py-2 transition-all duration-300 text-center"
+                    >
+                        📞 +91 9904269699
+                    </a>
+                </li>
+            </ul>
+
+            <button id="menu-btn" class="text-2xl md:hidden focus:outline-none">
+                ☰
+            </button>
+        </nav>
+
+        <!-- Mobile Dropdown Menu -->
+        <div
+            id="mobile-menu"
+            class="hidden bg-white shadow-lg border-t border-gray-200 md:hidden"
+        >
+            <ul class="flex flex-col space-y-4 p-5 font-semibold text-gray-800">
+                <li><a href="index.html" class="hover:text-dark-blue">Home</a></li>
+                <li><a href="about.html" class="hover:text-dark-blue">About</a></li>
+                <li><a href="services.html" class="hover:text-dark-blue">Services</a></li>
+                <li><a href="projects.html" class="hover:text-dark-blue">Projects</a></li>
+                <li><a href="clients.html" class="hover:text-dark-blue">Clients</a></li>
+                <li><a href="contact.html" class="hover:text-dark-blue">Contact</a></li>
+                <li>
+                    <a
+                        href="tel:+919904269699"
+                        class="border border-[#12356d] text-[#12356d] hover:bg-[#12356d] hover:text-white h-11 rounded-md px-3 py-2 transition-all duration-300 text-center"
+                    >
+                        📞 +91 9904269699
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <h1 class="font-bold">Clients</h1>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <!-- Header
+        <h2 class="text-4xl font-bold text-gray-900 text-center mb-4">Our Valued Clients</h2>
+        <p class="text-center text-[#111827] mb-12">Trusted by leading organizations across various industries</p> -->
+
+        <!-- Rotating Clients Section -->
+         <div class="clients-container">
+            <div class="clients-track">
+                <!-- Client Logos - Duplicated for seamless looping -->
+                <div class="client-logo">
+                    <img src="images/client1.jpg" alt="banduksmithstudio">
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client2.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client3.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client4.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                   <img src="images/client5.jpg" alt="banduksmithstudio">
+                </div>
+                
+                <div class="client-logo">
+                     <img src="images/client6.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client7.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client8.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                     <img src="images/client9.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client10.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client11.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                     <img src="images/client12.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <!-- Duplicate the logos for seamless looping  --!>
+                 <div class="client-logo">
+                    <img src="images/client1.jpg" alt="banduksmithstudio">
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client2.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client3.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client4.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                   <img src="images/client5.jpg" alt="banduksmithstudio">
+                </div>
+                
+                <div class="client-logo">
+                     <img src="images/client6.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client7.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client8.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                     <img src="images/client9.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client10.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                    <img src="images/client11.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+                <div class="client-logo">
+                     <img src="images/client12.jpg" alt="banduksmithstudio">
+
+                </div>
+                
+            </div>
+        </div>
+        <!-- Testimonials Section -->
+        <div class="bg-[#f8fafc] rounded-2xl shadow-inner p-10 mt-16">
+            <h3 class="text-3xl font-bold text-[#12356d] text-center mb-8">What Our Clients Say</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- Testimonial 1 -->
+                <div class="bg-white border border-[#12356d] rounded-xl p-6 shadow-lg">
+                    <p class="italic text-[#111827] mb-4">"Aadishya's engineering expertise transformed our hospital project. Their attention to detail and innovative solutions exceeded our expectations."</p>
+                    <h4 class="font-bold text-[#12356d]">Dr. Rajesh Sharma</h4>
+                  <!--   <p class="text-gray-600 text-sm">Zydus Hospital</p>-->
+
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white border border-[#12356d] rounded-xl p-6 shadow-lg">
+                    <p class="italic text-[#111827] mb-4">"Professional team with outstanding technical knowledge. They delivered our project on time with exceptional quality and precision."</p>
+                    <h4 class="font-bold text-[#12356d]">Priya Patel</h4>
+                     <!--<p class="text-gray-600 text-sm">Super City Developers</p>-->
+
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white border border-[#12356d] rounded-xl p-6 shadow-lg">
+                    <p class="italic text-[#111827] mb-4">"Working with Aadishya has been a game-changer for our projects. Their sustainable solutions and cost-effective approach are remarkable."</p>
+                    <h4 class="font-bold text-[#12356d]">Amit Kumar</h4>
+                    <!--<p class="text-gray-600 text-sm">Shilp Construction</p>-->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Aadishya Engineering</h3>
+                <p>Excellence in MEPF engineering solutions. Building tomorrow's infrastructure today with innovative and sustainable designs.</p>
+                <div class="social-links">
+                 <!--   <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="LinkedIn">💼</a> -->
+                    <a href="https://www.instagram.com/aadishya.in/" aria-label="Instagram" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2ZM12 7a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 1.5a3.5 3.5 0 1 1 0 7a3.5 3.5 0 0 1 0-7Zm5.25-.88a.88.88 0 1 0 0-1.75a.88.88 0 0 0 0 1.75Z"/>
+  </svg>
+</a>
+
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <p>Electrical Engineering</p>
+                <p>HVAC Systems</p>
+                <p>Fire Protection</p>
+                <p>Solar Solutions</p>
+                <p>BIM & Revit</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 Ahmedabad</p>
+                <p style="display: inline-flex; align-items: top; gap: 5px;">
+                    📧 <a href="mailto:jainesh@gmail.com" style="text-decoration: none;">jainesh@gmail.com</a>
+                </p>
+                <p>📞 +91 9904269699</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aadishya Engineering. All rights reserved. </p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
