@@ -419,7 +419,7 @@
         .stats-container {
             max-width: 1400px;
             margin: 0 auto;
-            display: grid;
+            
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 3rem;
         }
@@ -948,21 +948,7 @@ background-repeat:no-repeat;
             .logo img {
     		height: 40px;
   	    }
-             		.whatsapp-float {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #25d366;
-        color: white;
-        border-radius: 50%;
-        padding: 14px;
-        font-size: 28px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        z-index: 50;
-      }
-      .whatsapp-float:hover {
-        background-color: #1ebc57;
-      }
+             	
  /* Services Section */
         .services-section {
             max-width: 1400px;
