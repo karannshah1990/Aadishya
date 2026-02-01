@@ -42,6 +42,17 @@
   <lastmod>2025-11-18T21:54:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://www.aadishya.in/</loc>
+  <video:video>
+    <video:thumbnail_loc>https://www.aadishya.in/images/video-thumbnail.jpg</video:thumbnail_loc>
+    <video:title>Engineering Excellence, Innovative Solutions</video:title>
+    <video:description>Aadishya MEPF design consultancy solutions</video:description>
+    <video:content_loc>https://www.aadishya.in/videos/hero-video.mp4</video:content_loc>
+    <video:duration>30</video:duration>
+    <video:view_count>1000</video:view_count>
+    <video:publication_date>2024-01-01</video:publication_date>
+  </video:video>
+</url>
 
 </urlset>
