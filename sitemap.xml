@@ -2,57 +2,66 @@
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+            http://www.google.com/schemas/sitemap-video/1.1
+            http://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd">
+
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://www.aadishya.in/</loc>
   <lastmod>2025-11-18T21:54:20+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.aadishya.in/index.html</loc>
-  <lastmod>2025-11-18T21:54:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.aadishya.in/about.html</loc>
-  <lastmod>2025-11-18T21:54:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.aadishya.in/services.html</loc>
-  <lastmod>2025-11-18T21:54:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.aadishya.in/projects.html</loc>
-  <lastmod>2025-11-18T21:54:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.aadishya.in/clients.html</loc>
-  <lastmod>2025-11-18T21:54:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.aadishya.in/contact.html</loc>
-  <lastmod>2025-11-18T21:54:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.aadishya.in/</loc>
   <video:video>
     <video:thumbnail_loc>https://www.aadishya.in/images/video-thumbnail.jpg</video:thumbnail_loc>
-    <video:title>Engineering Excellence, Innovative Solutions</video:title>
-    <video:description>Aadishya MEPF design consultancy solutions</video:description>
+    <video:title><![CDATA[Engineering Excellence, Innovative Solutions]]></video:title>
+    <video:description><![CDATA[Aadishya MEPF design consultancy solutions]]></video:description>
     <video:content_loc>https://www.aadishya.in/videos/hero-video.mp4</video:content_loc>
     <video:duration>30</video:duration>
     <video:view_count>1000</video:view_count>
     <video:publication_date>2024-01-01</video:publication_date>
+    <video:family_friendly>yes</video:family_friendly>
+    <video:requires_subscription>no</video:requires_subscription>
+    <video:uploader info="https://www.aadishya.in/">Aadishya Engineering</video:uploader>
   </video:video>
+</url>
+
+<url>
+  <loc>https://www.aadishya.in/about.html</loc>
+  <lastmod>2025-11-18T21:54:20+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.aadishya.in/services.html</loc>
+  <lastmod>2025-11-18T21:54:20+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.aadishya.in/projects.html</loc>
+  <lastmod>2025-11-18T21:54:20+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.aadishya.in/clients.html</loc>
+  <lastmod>2025-11-18T21:54:20+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://www.aadishya.in/contact.html</loc>
+  <lastmod>2025-11-18T21:54:20+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
 
 </urlset>
